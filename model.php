@@ -11,8 +11,7 @@ function hsc($s)
 // *************************************
 // データの書き込み
 // *************************************
-function write_data()
-{
+function write_data() {
 
     global $dataFile;
 
@@ -21,17 +20,17 @@ function write_data()
 
     if ($message !== "") {
 
-        if ($user == "") {
-            $user = "匿名さん";
+        if ( $user == "" ) {
+            $user = "匿名で投稿";
         }
 
         // データの区切り文字をスペース化する
         $message = str_replace("\t", ' ', $message);
         $user = str_replace("\t", ' ', $user);
 
-        $postedAt = date('Y-m-d H:i:s');
+        $time_stamp = date('Y-m-d H:i:s');
 
-        $newData = "{$message}\t{$user}\t{$postedAt}\n";
+        $newData = "{$message}\t{$user}\t{$time_stamp}\n";
 
         // ファイルに書き込み
         $fp = fopen($dataFile, 'a');
@@ -47,12 +46,14 @@ function write_data()
 // **************************
 // デバッグ表示
 // **************************
-function debug_print()
-{
+function debug_print() {
 
     print "<pre class=\"m-5\">";
-    print_r($_GET);
-    print_r($_POST);
-    print_r($_SESSION);
+    print_r( $_GET );
+    print_r( $_POST );
+    print_r( $_SESSION );
     print "</pre>";
+
 }
+
+?>
