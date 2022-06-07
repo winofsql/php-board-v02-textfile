@@ -58,4 +58,5 @@ else {
 require_once("view.php");
 
 
-debug_print();
+//debug_print();
+?>

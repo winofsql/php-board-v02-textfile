@@ -10,11 +10,37 @@
 <body>
     <h3 class="alert alert-primary">掲示板</h3>
     <div id="content" class="m-4">
-        <form action="" method="POST">
-            <p><span style='display:inline-block;width:100px;'>メッセージ</span> <input type="text" name="message" value="<?= $_POST["message"] ?>"></p>
-            <p><span style='display:inline-block;width:100px;'>投稿者</span> <input type="text" name="user" value="<?= $_POST["user"] ?>"></p>
-            <input type="submit" name="send" value="投稿">
+        <form action=""
+            method="POST">
+	        <div>
+                <span style='display:inline-block;width:100px;'>
+                    メッセージ
+                </span>
+                <input
+                    type="text"
+                    name="message"
+                    value="<?= $_POST["message"] ?>"
+                    >
+                <input
+                    type="submit"
+                    name="send"
+                    value="投稿"
+                    >
+            </div>
+	        <div>
+                <span style='display:inline-block;width:100px;'>
+                    投稿者
+	            </span>
+	            <input
+	               type="text"
+	               name="user"
+                   value="<?= $_POST["user"] ?>"
+	               >
+            </div>
+
         </form>
+
+
 
         <h5 class="m-4 alert alert-primary" style='width:200px;text-align:center'>投稿一覧 (<?= $kensu ?>件)</h5>
         <ul>
@@ -23,5 +49,4 @@
 
     </div>
 </body>
-
 </html>
