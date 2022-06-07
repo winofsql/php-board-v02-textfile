@@ -12,7 +12,7 @@
     <div id="content" class="m-4">
         <form action=""
             method="POST">
-	        <div>
+            <div>
                 <span style='display:inline-block;width:100px;'>
                     メッセージ
                 </span>
@@ -27,15 +27,15 @@
                     value="投稿"
                     >
             </div>
-	        <div>
+            <div>
                 <span style='display:inline-block;width:100px;'>
                     投稿者
-	            </span>
-	            <input
-	               type="text"
-	               name="user"
-                   value="<?= $_POST["user"] ?>"
-	               >
+                </span>
+                <input
+                type="text"
+                name="user"
+                value="<?= $_POST["user"] ?>"
+                >
             </div>
 
         </form>
