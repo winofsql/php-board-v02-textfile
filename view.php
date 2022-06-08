@@ -4,12 +4,15 @@
     <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
-    <title>掲示板</title>
+    <title>掲示板 v02</title>
+    
+
 </head>
 
 <body>
     <h3 class="alert alert-primary">掲示板</h3>
-    <div id="content" class="m-4">
+    <div id="content"
+        class="m-4">
         <form action=""
             method="POST">
             <div>
@@ -32,10 +35,10 @@
                     投稿者
                 </span>
                 <input
-                type="text"
-                name="user"
-                value="<?= $_POST["user"] ?>"
-                >
+                    type="text"
+                    name="user"
+                    value="<?= $_POST["user"] ?>"
+                    >
             </div>
 
         </form>
