@@ -6,11 +6,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
     <title>掲示板 v02</title>
     
+<script>
+
+</script>
+
 
 </head>
 
 <body>
-    <h3 class="alert alert-primary">掲示板</h3>
+    <h3 class="alert alert-primary">
+        <a href="control.php">掲示板</a>
+        <a href=".." style="float:right;text-decoration:none;">📂</a>
+    </h3>
     <div id="content"
         class="m-4">
         <form action=""
