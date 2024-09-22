@@ -1,6 +1,7 @@
 <?php
 
 // *************************************
+// MARK:hsc
 // HTML の埋め込みを排除する
 // *************************************
 function hsc($s)
@@ -9,6 +10,7 @@ function hsc($s)
 }
 
 // *************************************
+// MARK:write_data
 // データの書き込み
 // *************************************
 function write_data() {
@@ -24,15 +26,17 @@ function write_data() {
             $user = "匿名で投稿";
         }
 
-        // データの区切り文字をスペース化する
+        // TSV に出力するので TAB を排除
+        // ( TABをスペース化する )
         $message = str_replace("\t", ' ', $message);
         $user = str_replace("\t", ' ', $user);
 
         $time_stamp = date('Y-m-d H:i:s');
 
+        // TSV データ
         $newData = "{$message}\t{$user}\t{$time_stamp}\n";
 
-        // ファイルに書き込み
+        // ファイルに追加書き込み
         $fp = fopen($dataFile, 'a');
         fwrite($fp, $newData);
         fclose($fp);
@@ -44,6 +48,7 @@ function write_data() {
 
 
 // **************************
+// MARK:debug_print
 // デバッグ表示
 // **************************
 function debug_print() {
