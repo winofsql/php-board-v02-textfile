@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ja">
+<?php // MARK:HEAD ?>
 <head>
     <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
-    <title>掲示板 v02</title>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+    <title>掲示板 v02 TSV</title>
+
+<?php // MARK:SCRIPT ?>
 <script>
 
 </script>
@@ -13,9 +15,10 @@
 
 </head>
 
+<?php // MARK:BODY ?>
 <body>
     <h3 class="alert alert-primary">
-        <a href="control.php">掲示板</a>
+        <a href="control.php">掲示板(TSV)</a>
         <a href=".." style="float:right;text-decoration:none;">📂</a>
     </h3>
     <div id="content"
